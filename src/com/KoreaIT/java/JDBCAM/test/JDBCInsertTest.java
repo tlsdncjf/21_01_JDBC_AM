@@ -5,10 +5,12 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
+
 public class JDBCInsertTest {
 	public static void main(String[] args) {
 		Connection conn = null;
 		PreparedStatement pstmt = null;
+
 
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
@@ -51,6 +53,5 @@ public class JDBCInsertTest {
 				e.printStackTrace();
 			}
 		}
-
 	}
 }
