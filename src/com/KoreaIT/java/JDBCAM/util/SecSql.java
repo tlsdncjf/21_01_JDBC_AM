@@ -4,7 +4,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.util.ArrayList;
+import java.util.ArrayList; 
 import java.util.List;
 
 public class SecSql {
@@ -68,4 +68,5 @@ public class SecSql {
 	public static SecSql from(String sql) {
 		return new SecSql().append(sql);
 	}
+
 }
