@@ -10,6 +10,7 @@ import com.KoreaIT.java.JDBCAM.controller.ArticleController;
 import com.KoreaIT.java.JDBCAM.controller.MemberController;
 
 public class App {
+
 	private Scanner sc;
 
 	public App() {
@@ -19,7 +20,6 @@ public class App {
 
 	public void run() {
 		System.out.println("==프로그램 시작==");
-
 
 		while (true) {
 			System.out.print("명령어 > ");
@@ -37,7 +37,7 @@ public class App {
 
 			try {
 				conn = DriverManager.getConnection(url, "root", "");
-				
+
 				Container.conn = conn;
 
 				int actionResult = action(cmd);
@@ -92,8 +92,6 @@ public class App {
 		} else {
 			System.out.println("처리할 수 없는 명령어");
 		}
-		
-		
 
 		return 0;
 	}

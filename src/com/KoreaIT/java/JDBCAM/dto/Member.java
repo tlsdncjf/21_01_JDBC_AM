@@ -10,7 +10,7 @@ public class Member {
 	private LocalDateTime updateDate;
 	private String loginId;
 	private String loginPw;
-	private String name;
+	private  String name;
 
 	public Member(int id, LocalDateTime regDate, LocalDateTime updateDate, String loginId, String loginPw,
 			String name) {
@@ -46,11 +46,10 @@ public class Member {
 	public void setLoginPw(String loginPw) {
 		this.loginPw = loginPw;
 	}
-
 	public String getName() {
 		return name;
 	}
-
+	
 	public void setName(String name) {
 		this.name = name;
 	}
