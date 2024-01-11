@@ -71,7 +71,9 @@ public class App {
 		MemberController memberController = Container.memberController;
 		ArticleController articleController = Container.articleController;
 
-		if (cmd.equals("member login")) {
+		if (cmd.equals("member profile")) {
+			memberController.showProfile();
+		} else if (cmd.equals("member login")) {
 			memberController.login();
 		} else if (cmd.equals("member join")) {
 			memberController.doJoin();
@@ -88,6 +90,8 @@ public class App {
 		} else {
 			System.out.println("처리할 수 없는 명령어");
 		}
+		
+		
 
 		return 0;
 	}
